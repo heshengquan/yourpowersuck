@@ -1,2 +1,2 @@
-# yourpowersuck
+# 约跑社
 wechat program
