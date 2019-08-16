@@ -1,0 +1,15 @@
+from rest_framework.exceptions import APIException
+
+NotARunner = APIException(detail='not a runner', code=-1)
+AuthenticationFailed = APIException(detail='authentication failed', code=1)
+ArgumentError = APIException(detail='argument error', code=2)
+TooManyRequests = APIException(detail='too many requests', code=3)
+PermissionDenied = APIException(detail='permission denied', code=4)
+NoSuchResource = APIException(detail='no such resource', code=5)
+RequestFailed = APIException(detail='request failed', code=6)
+InvalidPhoneNumber = APIException(detail='invalid phone number', code=7)
+NoMarathonGrade = APIException(detail='no marathon grade', code=8)
+MarathonGradeDoesNotUpdate = APIException(detail='marathon grade does not update', code=9)
+MarathonVerificationCodeError = APIException(detail='marathon verification code is wrong', code=10)
+ActivityNotCompleted = APIException(detail='activity in progress', code=11)
+NotInActivity = APIException(detail='not in current activity',code=12)
